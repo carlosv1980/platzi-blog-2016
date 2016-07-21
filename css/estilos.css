@@ -2,6 +2,12 @@ body{
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
+
+h1{
+	margin: 0;
+	font-weight: 600;
+}
+
 header{
 	background: #273B47;
 	padding:0 10px;
@@ -42,5 +48,22 @@ nav li:last-child:after{
 
 nav ul{
 	display: flex;
+}
+
+.blog{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.portada{
+	position: relative;/*para acomodar description*/
+}
+
+.portada .description{
+	background: rgba(255, 255, 255, .5);
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	padding: 20px;
 }
 
