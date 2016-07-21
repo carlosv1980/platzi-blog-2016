@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background: #273B47;
+	padding:0 10px;
+	/*opcion 3*/
+	/* con esto alineamos y centramos el logo y el menu*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+
+}
+
+nav{
+	/*float: right;    opción 1*/
+	/*position: absolute;
+	right: 0; opción 2*/
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+}
+
+nav li{
+	color: white;
+	list-style: none;
+}
+
+nav li:after{
+	content: "|";
+	display: inline-block;/* le ponemos inline-block para poder darle margin y paddin*/
+	margin: 0 10px;
+}
+
+nav li:last-child:after{
+	display: none;
+}
+
+nav ul{
+	display: flex;
+}
+
