@@ -55,6 +55,21 @@ nav ul{
 	width: 1000px;
 }
 
+.blog-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item-blog{
+	width: 300px;
+}
+
+.item-blog h3{
+	font-weight: 600;
+	margin: 10px 0;
+}
+
 .portada{
 	position: relative;/*para acomodar description*/
 }
