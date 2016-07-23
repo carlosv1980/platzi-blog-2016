@@ -165,13 +165,15 @@ nav ul{
 
 .paginador a{
 	text-decoration: none;
+	display: block;
+	height: inherit;
+	padding: 0 10px;
 }
 
 .paginador li{
 	background: #eaeaea;
 	height: 40px;
 	line-height: 40px;
-	padding: 0 10px;
 	border: 1px solid gray;
 	margin: 0 5px;
 }
