@@ -10,6 +10,7 @@ body{
 h1{
 	margin: 0;
 	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 header{
@@ -74,6 +75,25 @@ nav ul{
 	height: inherit; /*alto heredado de nav = 50px*/
 }
 
+.autor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+	border-top: 1px solid gray;
+	padding-top: 15px;
+}
+
+.autor img{
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.autor p{
+	margin: 0;
+}
+
 .blog{
 	margin: 0 auto;
 	width: 1000px;
@@ -119,7 +139,11 @@ nav ul{
 
 .item-blog h3{
 	font-weight: 600;
-	margin: 10px 0;
+	margin: 10px 0 15px;
+}
+
+.item-blog .description{
+	margin-bottom: 15px;
 }
 
 .header-right{
@@ -168,6 +192,7 @@ nav ul{
 
 .portada{
 	position: relative;/*para acomodar description*/
+	margin-bottom: 20px;
 }
 
 .portada .description{
