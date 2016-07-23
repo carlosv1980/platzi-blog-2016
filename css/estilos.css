@@ -16,30 +16,48 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-
+	height: 50px;
 }
 
 nav{
 	/*float: right;    opción 1*/
 	/*position: absolute;
-	right: 0; opción 2*/
+	right: 0; opción7 2*/
+	height: inherit;/*alto heredado de header = 50px*/
 }
 
 nav a{
 	color: white;
 	text-decoration: none;
+	height: inherit; /*alto heredado de li = 50px*/
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+nav a:hover{
+	/*utilizamos box-shadow en vez de border para que no se desplace el texto*/
+	/*box-shawdow: donde se ubica la sombra, x, y, difuminado, color*/
+	box-shadow: inset 0px 5px 0px #ff4842 !important;
+	/*le damos important para que se sobreponga el rojo sobre el verde de la clase is-active*/
+}
+
+nav a.is-active{
+	box-shadow: inset 0px 5px 0px #7dcd40;
 }
 
 nav li{
 	color: white;
 	list-style: none;
+	height: inherit; /*alto heredado de nav ul = 50px*/
+	display: flex;
+	align-items: center;
 }
 
 nav li:after{
 	content: "|";
 	display: inline-block;/* le ponemos inline-block para poder darle margin y paddin*/
-	margin: 0 10px;
+	/*margin: 0 10px;*/
 }
 
 nav li:last-child:after{
@@ -47,7 +65,9 @@ nav li:last-child:after{
 }
 
 nav ul{
+	margin: 0;
 	display: flex;
+	height: inherit; /*alto heredado de nav = 50px*/
 }
 
 .blog{
@@ -61,6 +81,34 @@ nav ul{
 	justify-content: space-between;
 }
 
+.button{
+	background: gray;
+	box-shadow:inset 0 -5px 0 rgba(0, 0, 0, 0.3);
+	/*border-bottom: 5px solid black;*/
+	font-size: 14px;
+	padding:5px 10px 10px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	transition: .2s;
+
+}
+
+.button:active{
+	transform: scale(.9);
+}
+
+.button.red{
+	background:#ff4842;
+
+}
+
+.button.green{
+	background:#ff4842;
+
+}
+
+
 .item-blog{
 	width: 300px;
 }
@@ -68,6 +116,16 @@ nav ul{
 .item-blog h3{
 	font-weight: 600;
 	margin: 10px 0;
+}
+
+.header-right{
+	height: inherit;/*alto heredado de header = 50px*/
+	display: flex;
+	align-items: center;
+}
+
+.header-right .button{
+	margin-left: 10px;
 }
 
 .portada{
@@ -81,4 +139,3 @@ nav ul{
 	left: 20px;
 	padding: 20px;
 }
-
