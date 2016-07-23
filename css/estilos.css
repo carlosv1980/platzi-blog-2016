@@ -1,6 +1,10 @@
+a{
+	color: #515151;
+}
 body{
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+	color: #515151;
 }
 
 h1{
@@ -127,6 +131,40 @@ nav ul{
 .header-right .button{
 	margin-left: 10px;
 }
+
+.paginador{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.paginador a{
+	text-decoration: none;
+}
+
+.paginador li{
+	background: #eaeaea;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	border: 1px solid gray;
+	margin: 0 5px;
+}
+
+.paginador li.selected{
+	border-color: transparent;
+	background: white;
+}
+
+.paginador ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+}
+
 
 .portada{
 	position: relative;/*para acomodar description*/
